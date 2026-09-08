@@ -1,0 +1,150 @@
+/*350*/
+@media (max-width: 1300px) {
+    nav .container .body ul {
+    column-gap: 20px;
+    }
+
+    nav .container .logo {
+    width: 55px;
+    height: 55px;
+    }
+
+    #LandingPage::before {
+    
+    width: 135%;
+    }
+
+    #LandingPage .container .title h1 {
+    font-size: 25px;
+    }
+    #LandingPage .container .title p {
+    width: 95%;
+    font-size: 13px;
+    }
+    #LandingPage .container .title .buttons {
+    
+    width: 75%;
+    }
+    #LandingPage .container .title .buttons button a {
+    width: 120px;
+    font-size: 14px;
+    }
+    #LandingPage .container .title a.shape1, #LandingPage .container .title a.shape2 {
+    width: 28px;
+    height: 55px;
+    top: 42%;
+    }
+    #LandingPage .container .body {
+   
+    height: 85%;
+    }
+
+    #LandingPage .container .body .box .item .icons .part
+    {
+        transform: translateY(-110%);
+    }
+
+    #LandingPage .container .body .box .item .icons .part:nth-of-type(3) {
+    transform: translateY(-90%);
+  }
+  #LandingPage::after {
+   
+    width: 70%;
+  }
+  .theme-toggle-wrapper {
+   
+    right: 5px;
+    }
+    .theme-toggle-bar {
+    width: 55px;
+    }
+    body.Glow-theme .toggle-circle {
+    transform: translateX(18px);
+    }
+}
+
+/*450*/
+@media (min-width: 371px) and (max-width: 1300px) {
+      nav .container .body ul {
+        column-gap: 25px;
+    }
+    #LandingPage .container .title .buttons button a {
+        width: 160px;
+    }
+    #LandingPage .container .title a.shape1, #LandingPage .container .title a.shape2 {
+        width: 30px;
+        height: 60px;
+        top: 40%;
+    }
+        #LandingPage .container .body {
+        height: 90%;
+    }
+}
+
+/*650*/
+@media (min-width: 577px) and (max-width: 1300px) {
+    #LandingPage .container .title h1 {
+        font-size: 30px;
+    }
+
+    #LandingPage .container .title p {
+        font-size: 15px;
+    }
+
+    #LandingPage .container .body {
+        height: 93%;
+    }
+    #LandingPage .container .body .box .item .icons .part
+    {
+        transform: translateY(-100%);
+    }
+
+    #LandingPage .container .body .box .item .icons .part:nth-of-type(3) {
+    transform: translateY(-80%);
+    }
+    .theme-toggle-wrapper {
+        right: 20px;
+    }
+
+    .theme-toggle-bar {
+    width: 70px;
+    }
+
+    body.Glow-theme .toggle-circle {
+        transform: translateX(32px);
+    }
+}
+
+/*850*/
+@media (min-width: 769px) and (max-width: 1300px) {
+  #LandingPage .container .body {
+        height: 96%;
+    }
+  #LandingPage::after {
+        width: 55%;
+    }
+}
+
+/*1050*/
+@media (min-width: 992px) and (max-width: 1300px) {
+  nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+  }
+      #LandingPage .container .body {
+        height: 100%;
+    }
+        #LandingPage::after {
+        width: 40%;
+    } 
+        .theme-toggle-wrapper {
+        right: 65px;
+    }   
+}
+
+/*1250*/
+@media (min-width: 1181px) and (max-width: 1300px) {
+  
+}

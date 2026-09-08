@@ -1,0 +1,418 @@
+   /* 1. NAVIGATION BAR STYLING */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: rgba(2, 6, 18, 0.3);
+  border-bottom: 1px solid var(--glass-border);
+  padding-block: 12px;
+  transition: .5s;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav .container .logo {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+nav .container .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /*make image suitable */
+  filter: drop-shadow(0 0 8px var(--third-color)); /* make shadow on borders not border-box */
+  transition: .5s;
+}
+
+nav .container .logo img:hover {
+  transform: scale(1.25);
+}
+
+
+nav .container .body ul {
+  display: flex;
+  column-gap: 30px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+nav .container .body ul li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: var(--white-color);
+  position: relative;
+  letter-spacing: 0.5px;
+  transition: .5s;
+}
+
+nav .container .body ul li a::after { 
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  background-color: var(--third-color);
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+  box-shadow: 0 0 8px var(--third-color);
+}
+
+nav .container .body ul li:hover a,
+nav .container .body ul li.active a {
+  color: var(--third-color);
+}
+nav .container .body ul li:hover a::after, 
+nav .container .body ul li.active a::after {
+  width: 100%;
+}
+
+
+   /*  Landing Page Section  */
+
+#LandingPage {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* to make top with curve */
+#LandingPage::before {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 80%;
+  background: radial-gradient(circle at top, var(--second-color) 0%, rgba(3, 13, 54, 0.4) 45%, transparent 70%);
+  border-radius: 0 0 50% 50%;
+  border-bottom: 2px solid var(--third-color);
+  box-shadow: 0px 15px 50px 10px var(--second-color);
+  z-index: 1;
+  transition: all 0.6s ease;  /* when reloading or any move for the webpage */
+}
+
+/* Bottom Glow Accent */
+#LandingPage::after {
+  content: '';
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25%;
+  height: 35%;
+  background: radial-gradient(circle at bottom, var(--third-color) 0%, var(--second-color) 40%, transparent 80%);
+  border-radius: 50% 50% 0 0;
+  box-shadow: 0 -20px 80px var(--third-color), 0 -40px 120px var(--second-color);
+  z-index: 2;
+  transition: all 0.6s ease;  /* when reloading or any move for the webpage */
+}
+
+#LandingPage .container {
+  z-index: 3;
+  height: 90%;
+  width: 100%;
+}
+
+/* Header & Content Styling */
+#LandingPage .container .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#LandingPage .container .title h1 {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--white-color);
+  text-shadow: 0px 0px 25px var(--third-color), 0px 0px 50px var(--second-color);
+  margin-bottom: 12px;
+  transition: color 0.6s ease, text-shadow 0.6s ease;
+}
+
+#LandingPage .container .title p {
+  width: 55%;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin: auto;
+  letter-spacing: 0.5px;
+  margin-bottom: 35px;
+}
+
+/* Action Buttons */
+#LandingPage .container .title .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  width: 50%;
+}
+
+#LandingPage .container .title .buttons button {
+  border: 1px solid var(--glass-border);
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+}
+
+#LandingPage .container .title .buttons button:nth-of-type(1) {
+  background: var(--btn-gradient);
+  border: none;
+}
+
+#LandingPage .container .title .buttons button:nth-of-type(1):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px var(--third-color), 0 0 10px var(--second-color);
+}
+
+#LandingPage .container .title .buttons button:nth-of-type(2) {
+  background-color: var(--btn2-bg);
+}
+
+#LandingPage .container .title .buttons button:nth-of-type(2):hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 20px var(--third-color);
+  border-color: var(--third-color);
+}
+
+#LandingPage .container .title .buttons button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 45px;
+  text-decoration: none;
+  color: var(--white-color);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* Animated Center Indicator Shapes */
+#LandingPage .container .title a.shape1,
+#LandingPage .container .title a.shape2 {
+  width: 32px;
+  height: 65px;
+  border: 2px solid var(--second-color);
+  border-radius: 20px;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  transition: opacity 0.6s ease, border-color 0.6s ease;
+}
+
+#LandingPage .container .title a.shape1 {
+  opacity: 1;
+}
+
+#LandingPage .container .title a.shape2 {
+  opacity: 0;
+  border-color: var(--third-color);
+}
+
+body.Glow-theme #LandingPage .container .title a.shape1 {
+  opacity: 0;
+}
+
+body.Glow-theme #LandingPage .container .title a.shape2 {
+  opacity: 1;
+}
+
+#LandingPage .container .title a.shape1::after,
+#LandingPage .container .title a.shape2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: var(--ball-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveBall 2s linear infinite;
+  box-shadow: 0px 0px 12px 4px var(--third-color);
+}
+
+#LandingPage .container .title i {
+  color: var(--white-color);
+  padding-inline: 5px;
+}
+
+   /* 3. DASHBOARD & INTERACTIVE ICONS SECTION */
+
+#LandingPage .container .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+#LandingPage .container .body .box {
+  width: 40%;
+}
+
+/* Center Interactive Trigger Button */
+#LandingPage .container .body .box .item a {
+  position: absolute;
+  bottom: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 75px;
+  border: 1px solid var(--third-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, var(--second-color) 0%, rgba(2, 6, 18, 0.9) 70%);
+  border-radius: 50%;
+  text-decoration: none;
+  color: var(--white-color);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6), 0 0 15px var(--second-color);
+  transition: all 0.5s cubic-bezier(0.6, 0, 0.3, 2); /*better than ease */
+  z-index: 5;
+}
+
+#LandingPage .container .body .box .item a:hover {
+  background: var(--third-color);
+  color: var(--main-color);
+  box-shadow: 0 0 30px var(--third-color);
+}
+
+/* Icons Grid & Container Layout */
+#LandingPage .container .body .box .item .icons .part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#LandingPage .container .body .box .item .icons .part:nth-of-type(2) { 
+  justify-content: space-around;
+}
+
+#LandingPage .container .body .box .item .icons .part:nth-of-type(3) {
+  justify-content: space-between;
+  transform: translateY(100%);
+}
+
+#LandingPage .container .body .box .item .icons .part i {
+  width: 65px;
+  height: 65px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px); /* more active view and Called Glass morphic Effect */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease;
+}
+
+/* Individual Glass Icon Custom Colors & Glows */
+#LandingPage .container .body .box .item .icons .part1 i {
+  color: var(--third-color);
+}
+
+#LandingPage .container .body .box .item .icons .part2 i:nth-of-type(1) {
+  color: rgb(0, 242, 254);
+}
+
+#LandingPage .container .body .box .item .icons .part2 i:nth-of-type(2) {
+  color: rgb(255, 51, 102); 
+}
+
+#LandingPage .container .body .box .item .icons .part3 i:nth-of-type(1) {
+  color: rgb(56, 239, 125); 
+}
+
+#LandingPage .container .body .box .item .icons .part3 i:nth-of-type(2) {
+  color: rgb(0, 210, 255);
+}
+
+/* Individual Hover Animations */
+#LandingPage .container .body .box .item .icons .part1 i:hover {
+  transform: translateY(-40%) scale(1.25);
+  border-color: var(--third-color);
+  box-shadow: 0 0 20px var(--third-color);
+}
+
+#LandingPage .container .body .box .item .icons .part2 i:nth-of-type(1):hover {
+  transform: translate(40%, 0%);
+  border-color: var(--third-color);
+  box-shadow: 0 0 20px var(--third-color);
+}
+
+#LandingPage .container .body .box .item .icons .part2 i:nth-of-type(2):hover {
+  animation: heartbeat 1.2s linear infinite;
+  border-color: rgb(255, 51, 102);
+  box-shadow: 0 0 20px rgb(255, 51, 102);
+}
+
+#LandingPage .container .body .box .item .icons .part3 i:nth-of-type(1):hover {
+  transform: translateY(0%) rotate(360deg);
+  border-color: rgb(56, 239, 125);
+  box-shadow: 0 0 20px rgb(56, 239, 125);
+}
+
+#LandingPage .container .body .box .item .icons .part3 i:nth-of-type(2):hover {
+  transform: translateY(-10%) rotate(-45deg);
+  border-color: var(--third-color);
+  box-shadow: 0 0 20px var(--third-color);
+}
+
+/* Focus States Linked to Central Trigger Button */
+#LandingPage .container .body .box .item a:focus ~ .icons .part3 i:nth-of-type(1) {
+  transform: translateY(-100%);
+}
+
+#LandingPage .container .body .box .item a:focus ~ .icons .part3 i:nth-of-type(2) {
+  transform: translateY(-100%);
+  transition-delay: .25s;
+}
+
+#LandingPage .container .body .box .item a:focus ~ .icons .part2 i:nth-of-type(1) {
+  transform: translate(0%, -100%);
+  transition-delay: .5s;
+}
+
+#LandingPage .container .body .box .item a:focus ~ .icons .part2 i:nth-of-type(2) {
+  transform: translateY(-100%);
+  transition-delay: .75s;
+}
+
+#LandingPage .container .body .box .item a:focus ~ .icons .part1 i {
+  transform: translateY(-100%);
+  transition-delay: 1s;
+}
