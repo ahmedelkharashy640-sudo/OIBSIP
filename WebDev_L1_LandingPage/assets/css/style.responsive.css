@@ -9,45 +9,45 @@
     height: 55px;
     }
 
-    #LandingPage::before {
+    #Home::before {
     
     width: 135%;
     }
 
-    #LandingPage .container .title h1 {
+    #Home .container .title h1 {
     font-size: 25px;
     }
-    #LandingPage .container .title p {
+    #Home .container .title p {
     width: 95%;
     font-size: 13px;
     }
-    #LandingPage .container .title .buttons {
+    #Home .container .title .buttons {
     
     width: 75%;
     }
-    #LandingPage .container .title .buttons button a {
+    #Home .container .title .buttons button a {
     width: 120px;
     font-size: 14px;
     }
-    #LandingPage .container .title a.shape1, #LandingPage .container .title a.shape2 {
+    #Home .container .title a.shape1, #Home .container .title a.shape2 {
     width: 28px;
     height: 55px;
     top: 42%;
     }
-    #LandingPage .container .body {
+    #Home .container .body {
    
     height: 85%;
     }
 
-    #LandingPage .container .body .box .item .icons .part
+    #Home .container .body .box .item .icons .part
     {
         transform: translateY(-110%);
     }
 
-    #LandingPage .container .body .box .item .icons .part:nth-of-type(3) {
+    #Home .container .body .box .item .icons .part:nth-of-type(3) {
     transform: translateY(-90%);
   }
-  #LandingPage::after {
+  #Home::after {
    
     width: 70%;
   }
@@ -61,6 +61,65 @@
     body.Glow-theme .toggle-circle {
     transform: translateX(18px);
     }
+
+
+
+  svg {
+    overflow: visible;
+    margin-bottom: auto;
+    }
+  svg text {
+    
+        font-size: 35px;
+    }
+  #Featured .container .content 
+    {
+         display: block;
+     }
+  #Featured .container .content .box 
+  {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  #Featured .container .content .box .item img {
+    max-width: 250px;
+    height: 220px;
+}
+#Featured .container .content .box .item h2 {
+    font-size: 30px;
+}
+#Featured .container .content .box .item p 
+{
+    width: 95%;
+}
+
+#Products .container .content 
+{
+    display: block;
+}
+#Products .container .content .box 
+{
+    width: 90%;
+}
+   #Products svg text {
+        font-size: 60px;
+    }
+    #Products .container .content .box .specialCard .front img {
+    max-width: 200px;
+    }
+    #Products .container .content .box .specialCard .back {
+    top: 0%;
+    left: 14%;
+    width: 85%;
+    }
+    #Products .container .content .box .specialCard .back .head h3 {
+    font-size: 20px;
+    }
+    #Products .container .content .box .specialCard .back .body .description p {
+    width: 100%;
+    font-size: 12px;
+    }
+
 }
 
 /*450*/
@@ -68,38 +127,52 @@
       nav .container .body ul {
         column-gap: 25px;
     }
-    #LandingPage .container .title .buttons button a {
+    #Home .container .title .buttons button a {
         width: 160px;
     }
-    #LandingPage .container .title a.shape1, #LandingPage .container .title a.shape2 {
+    #Home .container .title a.shape1, #Home .container .title a.shape2 {
         width: 30px;
         height: 60px;
         top: 40%;
     }
-        #LandingPage .container .body {
+        #Home .container .body {
         height: 90%;
+    }
+    #Featured .container .content .box 
+  {
+    width: auto;
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  #Products .container .content .box .specialCard .front 
+  {
+    overflow: visible;
+  }
+      #Products .container .content .box .specialCard .front img {
+        max-width: 240px;
     }
 }
 
 /*650*/
 @media (min-width: 577px) and (max-width: 1300px) {
-    #LandingPage .container .title h1 {
+    #Home .container .title h1 {
         font-size: 30px;
     }
 
-    #LandingPage .container .title p {
+    #Home .container .title p {
         font-size: 15px;
     }
 
-    #LandingPage .container .body {
+    #Home .container .body {
         height: 93%;
     }
-    #LandingPage .container .body .box .item .icons .part
+    #Home .container .body .box .item .icons .part
     {
         transform: translateY(-100%);
     }
 
-    #LandingPage .container .body .box .item .icons .part:nth-of-type(3) {
+    #Home .container .body .box .item .icons .part:nth-of-type(3) {
     transform: translateY(-80%);
     }
     .theme-toggle-wrapper {
@@ -113,15 +186,44 @@
     body.Glow-theme .toggle-circle {
         transform: translateX(32px);
     }
+
+        svg text {
+        font-size: 45px;
+    }
+    #Products .container .content {
+    display: flex;
+   
+}
+#Products .container .content .box 
+{
+    width: 50%;
+}
 }
 
 /*850*/
 @media (min-width: 769px) and (max-width: 1300px) {
-  #LandingPage .container .body {
+  #Home .container .body {
         height: 96%;
     }
-  #LandingPage::after {
+  #Home::after {
         width: 55%;
+    }
+    #Featured .container .content 
+    {
+        display: flex;
+        flex-wrap:wrap;
+    }
+        svg text {
+        font-size: 50px;
+    }
+        #Featured .container .content .box {
+       
+        width: 50%;
+        }
+
+    #Products .container .content .box .specialCard .back {
+        top: 5%;
+        width: 70%;
     }
 }
 
@@ -133,15 +235,25 @@
     justify-content: space-between;
     width: 95%;
   }
-      #LandingPage .container .body {
+      #Home .container .body {
         height: 100%;
     }
-        #LandingPage::after {
+        #Home::after {
         width: 40%;
     } 
         .theme-toggle-wrapper {
         right: 65px;
     }   
+
+     #Products .container .content .box 
+     {
+        width: calc(100%/3);
+     }
+         #Products .container .content .box .specialCard .back {
+        top: 5%;
+        width: 80%;
+        left: 12%;
+    }
 }
 
 /*1250*/

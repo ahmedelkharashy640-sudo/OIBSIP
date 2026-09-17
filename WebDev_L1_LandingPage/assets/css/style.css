@@ -4,7 +4,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
   background: rgba(2, 6, 18, 0.3);
   border-bottom: 1px solid var(--glass-border);
   padding-block: 12px;
@@ -83,9 +83,9 @@ nav .container .body ul li.active a::after {
 }
 
 
-   /*  Landing Page Section  */
+   /*  Home Page Section  */
 
-#LandingPage {
+#Home {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -95,7 +95,7 @@ nav .container .body ul li.active a::after {
 }
 
 /* to make top with curve */
-#LandingPage::before {
+#Home::before {
   content: '';
   position: absolute;
   bottom: 50%;
@@ -112,7 +112,7 @@ nav .container .body ul li.active a::after {
 }
 
 /* Bottom Glow Accent */
-#LandingPage::after {
+#Home::after {
   content: '';
   position: absolute;
   top: 85%;
@@ -127,14 +127,14 @@ nav .container .body ul li.active a::after {
   transition: all 0.6s ease;  /* when reloading or any move for the webpage */
 }
 
-#LandingPage .container {
+#Home .container {
   z-index: 3;
   height: 90%;
   width: 100%;
 }
 
 /* Header & Content Styling */
-#LandingPage .container .title {
+#Home .container .title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,7 +143,7 @@ nav .container .body ul li.active a::after {
   padding-top: 20px;
 }
 
-#LandingPage .container .title h1 {
+#Home .container .title h1 {
   font-size: 38px;
   font-weight: 700;
   color: var(--white-color);
@@ -152,7 +152,7 @@ nav .container .body ul li.active a::after {
   transition: color 0.6s ease, text-shadow 0.6s ease;
 }
 
-#LandingPage .container .title p {
+#Home .container .title p {
   width: 55%;
   font-size: 16px;
   line-height: 1.5;
@@ -163,7 +163,7 @@ nav .container .body ul li.active a::after {
 }
 
 /* Action Buttons */
-#LandingPage .container .title .buttons {
+#Home .container .title .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,35 +171,35 @@ nav .container .body ul li.active a::after {
   width: 50%;
 }
 
-#LandingPage .container .title .buttons button {
+#Home .container .title .buttons button {
   border: 1px solid var(--glass-border);
   border-radius: 15px;
   transition: all 0.4s ease;
   overflow: hidden;
 }
 
-#LandingPage .container .title .buttons button:nth-of-type(1) {
+#Home .container .title .buttons button:nth-of-type(1) {
   background: var(--btn-gradient);
   border: none;
 }
 
-#LandingPage .container .title .buttons button:nth-of-type(1):hover {
+#Home .container .title .buttons button:nth-of-type(1):hover {
   transform: translateY(-2px);
   box-shadow: 0 0 25px var(--third-color), 0 0 10px var(--second-color);
 }
 
-#LandingPage .container .title .buttons button:nth-of-type(2) {
+#Home .container .title .buttons button:nth-of-type(2) {
   background-color: var(--btn2-bg);
 }
 
-#LandingPage .container .title .buttons button:nth-of-type(2):hover {
+#Home .container .title .buttons button:nth-of-type(2):hover {
   transform: translateY(-2px);
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 0 20px var(--third-color);
   border-color: var(--third-color);
 }
 
-#LandingPage .container .title .buttons button a {
+#Home .container .title .buttons button a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,8 +212,8 @@ nav .container .body ul li.active a::after {
 }
 
 /* Animated Center Indicator Shapes */
-#LandingPage .container .title a.shape1,
-#LandingPage .container .title a.shape2 {
+#Home .container .title a.shape1,
+#Home .container .title a.shape2 {
   width: 32px;
   height: 65px;
   border: 2px solid var(--second-color);
@@ -226,25 +226,25 @@ nav .container .body ul li.active a::after {
   transition: opacity 0.6s ease, border-color 0.6s ease;
 }
 
-#LandingPage .container .title a.shape1 {
+#Home .container .title a.shape1 {
   opacity: 1;
 }
 
-#LandingPage .container .title a.shape2 {
+#Home .container .title a.shape2 {
   opacity: 0;
   border-color: var(--third-color);
 }
 
-body.Glow-theme #LandingPage .container .title a.shape1 {
+body.Glow-theme #Home .container .title a.shape1 {
   opacity: 0;
 }
 
-body.Glow-theme #LandingPage .container .title a.shape2 {
+body.Glow-theme #Home .container .title a.shape2 {
   opacity: 1;
 }
 
-#LandingPage .container .title a.shape1::after,
-#LandingPage .container .title a.shape2::after {
+#Home .container .title a.shape1::after,
+#Home .container .title a.shape2::after {
   content: '';
   position: absolute;
   top: 0;
@@ -258,14 +258,14 @@ body.Glow-theme #LandingPage .container .title a.shape2 {
   box-shadow: 0px 0px 12px 4px var(--third-color);
 }
 
-#LandingPage .container .title i {
+#Home .container .title i {
   color: var(--white-color);
   padding-inline: 5px;
 }
 
    /* 3. DASHBOARD & INTERACTIVE ICONS SECTION */
 
-#LandingPage .container .body {
+#Home .container .body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -274,12 +274,12 @@ body.Glow-theme #LandingPage .container .title a.shape2 {
   position: relative;
 }
 
-#LandingPage .container .body .box {
+#Home .container .body .box {
   width: 40%;
 }
 
 /* Center Interactive Trigger Button */
-#LandingPage .container .body .box .item a {
+#Home .container .body .box .item a {
   position: absolute;
   bottom: 22%;
   left: 50%;
@@ -301,29 +301,29 @@ body.Glow-theme #LandingPage .container .title a.shape2 {
   z-index: 5;
 }
 
-#LandingPage .container .body .box .item a:hover {
+#Home .container .body .box .item a:hover {
   background: var(--third-color);
   color: var(--main-color);
   box-shadow: 0 0 30px var(--third-color);
 }
 
 /* Icons Grid & Container Layout */
-#LandingPage .container .body .box .item .icons .part {
+#Home .container .body .box .item .icons .part {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#LandingPage .container .body .box .item .icons .part:nth-of-type(2) { 
+#Home .container .body .box .item .icons .part:nth-of-type(2) { 
   justify-content: space-around;
 }
 
-#LandingPage .container .body .box .item .icons .part:nth-of-type(3) {
+#Home .container .body .box .item .icons .part:nth-of-type(3) {
   justify-content: space-between;
   transform: translateY(100%);
 }
 
-#LandingPage .container .body .box .item .icons .part i {
+#Home .container .body .box .item .icons .part i {
   width: 65px;
   height: 65px;
   font-size: 22px;
@@ -341,78 +341,360 @@ body.Glow-theme #LandingPage .container .title a.shape2 {
 }
 
 /* Individual Glass Icon Custom Colors & Glows */
-#LandingPage .container .body .box .item .icons .part1 i {
+#Home .container .body .box .item .icons .part1 i {
   color: var(--third-color);
 }
 
-#LandingPage .container .body .box .item .icons .part2 i:nth-of-type(1) {
+#Home .container .body .box .item .icons .part2 i:nth-of-type(1) {
   color: rgb(0, 242, 254);
 }
 
-#LandingPage .container .body .box .item .icons .part2 i:nth-of-type(2) {
+#Home .container .body .box .item .icons .part2 i:nth-of-type(2) {
   color: rgb(255, 51, 102); 
 }
 
-#LandingPage .container .body .box .item .icons .part3 i:nth-of-type(1) {
+#Home .container .body .box .item .icons .part3 i:nth-of-type(1) {
   color: rgb(56, 239, 125); 
 }
 
-#LandingPage .container .body .box .item .icons .part3 i:nth-of-type(2) {
+#Home .container .body .box .item .icons .part3 i:nth-of-type(2) {
   color: rgb(0, 210, 255);
 }
 
 /* Individual Hover Animations */
-#LandingPage .container .body .box .item .icons .part1 i:hover {
+#Home .container .body .box .item .icons .part1 i:hover {
   transform: translateY(-40%) scale(1.25);
   border-color: var(--third-color);
   box-shadow: 0 0 20px var(--third-color);
 }
 
-#LandingPage .container .body .box .item .icons .part2 i:nth-of-type(1):hover {
+#Home .container .body .box .item .icons .part2 i:nth-of-type(1):hover {
   transform: translate(40%, 0%);
   border-color: var(--third-color);
   box-shadow: 0 0 20px var(--third-color);
 }
 
-#LandingPage .container .body .box .item .icons .part2 i:nth-of-type(2):hover {
+#Home .container .body .box .item .icons .part2 i:nth-of-type(2):hover {
   animation: heartbeat 1.2s linear infinite;
   border-color: rgb(255, 51, 102);
   box-shadow: 0 0 20px rgb(255, 51, 102);
 }
 
-#LandingPage .container .body .box .item .icons .part3 i:nth-of-type(1):hover {
+#Home .container .body .box .item .icons .part3 i:nth-of-type(1):hover {
   transform: translateY(0%) rotate(360deg);
   border-color: rgb(56, 239, 125);
   box-shadow: 0 0 20px rgb(56, 239, 125);
 }
 
-#LandingPage .container .body .box .item .icons .part3 i:nth-of-type(2):hover {
+#Home .container .body .box .item .icons .part3 i:nth-of-type(2):hover {
   transform: translateY(-10%) rotate(-45deg);
   border-color: var(--third-color);
   box-shadow: 0 0 20px var(--third-color);
 }
 
 /* Focus States Linked to Central Trigger Button */
-#LandingPage .container .body .box .item a:focus ~ .icons .part3 i:nth-of-type(1) {
+#Home .container .body .box .item a:focus ~ .icons .part3 i:nth-of-type(1) {
   transform: translateY(-100%);
 }
 
-#LandingPage .container .body .box .item a:focus ~ .icons .part3 i:nth-of-type(2) {
+#Home .container .body .box .item a:focus ~ .icons .part3 i:nth-of-type(2) {
   transform: translateY(-100%);
   transition-delay: .25s;
 }
 
-#LandingPage .container .body .box .item a:focus ~ .icons .part2 i:nth-of-type(1) {
+#Home .container .body .box .item a:focus ~ .icons .part2 i:nth-of-type(1) {
   transform: translate(0%, -100%);
   transition-delay: .5s;
 }
 
-#LandingPage .container .body .box .item a:focus ~ .icons .part2 i:nth-of-type(2) {
+#Home .container .body .box .item a:focus ~ .icons .part2 i:nth-of-type(2) {
   transform: translateY(-100%);
   transition-delay: .75s;
 }
 
-#LandingPage .container .body .box .item a:focus ~ .icons .part1 i {
+#Home .container .body .box .item a:focus ~ .icons .part1 i {
   transform: translateY(-100%);
   transition-delay: 1s;
+}
+
+#Featured 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 40px;
+  
+} 
+#Featured .container 
+{
+  height: 100%;
+  width: 90%;
+  text-align: center;
+
+}
+
+svg {
+    font-family: "Russo One", sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+    transition: color 0.6s, text-shadow 0.6s;
+    width: 100%;
+}
+
+svg text {
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: var(--main-color);
+    font-size: 60px;
+}
+
+
+
+
+#Featured .container .content 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Featured .container .content .box 
+{
+  width: calc(100%/3);
+  padding: 10px 30px;
+}
+.active-section #Featured .content .box:nth-child(1) {
+  animation: slideFromLeft 0.8s ease forwards;
+}
+
+.active-section #Featured .content .box:nth-child(2) {
+  animation: slideFromBottom 0.8s ease forwards;
+}
+
+.active-section #Featured .content .box:nth-child(3) {
+  animation: slideFromRight 0.8s ease forwards;
+}
+#Featured .container .content .box .item 
+{
+   border: 2px solid var(--second-color);
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: translateY(0);
+  transition-duration: 1s;
+}
+#Featured .container .content .box:hover  .item
+{
+  transform: translateY(-35px);
+    box-shadow:
+     rgb(0, 217, 255, 0.4) 6px 5px 20px 18px,
+     rgb(0, 217, 255, 0.3) 1px 7px 6px 0px,
+     rgb(0, 217, 255, 0.2) 14px 8px 10px 7px,
+     rgb(0, 217, 255, 0.1) 3px 1px 12px 0px,
+     rgb(0, 217, 255, 0.05) 5px 13px 12px 1px;
+}
+#Featured .container .content .box .item .image 
+{
+  margin-block: 40px;
+}
+#Featured .container .content .box .item img 
+{
+  max-width: 280px;
+  height: 280px;
+  transform: scale(1);
+  transition-duration: .6s;
+  cursor: pointer;
+}
+#Featured .container .content .box .item img:hover 
+{
+  transform: scale(1.1);
+} 
+
+#Featured .container .content .box .item h2 
+{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--white-color);
+    text-shadow: 0px 0px 25px var(--third-color), 0px 0px 50px var(--second-color);
+    margin-bottom: 20px;
+    transition: color 0.6s, text-shadow 0.6s;
+}
+#Featured .container .content .box .item p 
+{
+  width: 90%;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin: auto;
+  letter-spacing: 0.5px;
+  margin-bottom: 35px;
+}
+
+
+
+#Products 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Products .container 
+{
+  height: 100%;
+  text-align: center;
+}
+#Products .container .content 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#Products .container .content .box 
+{
+  width: calc(100%/3);
+  margin-bottom: 20px;
+  padding: 10px 25px;
+}
+
+#Products .container .content .box .specialCard 
+{
+  /* overflow: hidden; */
+  position: relative;
+    cursor: pointer;
+
+}
+#Products .container .content .box .specialCard .front 
+{
+  backface-visibility: hidden;
+    transition-duration: 2s;
+    border-radius: 10px;
+    overflow: hidden;
+} 
+
+#Products .container .content .box .specialCard:hover .front 
+{
+      transform:rotateY(180deg);
+}
+#Products .container .content .box .specialCard .front img 
+{
+  max-width: 350px;
+}
+
+#Products .container .content .box .specialCard .back 
+{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition-duration: 2s;
+    border-radius: 15px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 60%;
+    overflow: hidden;
+    border: 2px solid var(--second-color);
+    padding: 20px 0;
+}
+#Products .container .content .box .specialCard .back::before 
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    height: 0%;
+    transform: translate(-50%, -50%);
+    transition-duration: 2s;
+    border-radius: 100%;
+    background-color: rgba(27, 185, 185,0.3);
+} 
+#Products .container .content .box:hover .specialCard .back::before 
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition-delay: 2s;
+
+}
+#Products .container .content .box .specialCard:hover .back 
+{
+  transform: rotate(0deg);
+}
+#Products .container .content .box .specialCard .back .head h3 
+{
+   font-size: 25px;
+    font-weight: 600;
+    color: var(--white-color);
+    text-shadow: 0px 0px 25px var(--third-color), 0px 0px 50px var(--second-color);
+    margin-bottom: 20px;
+    transform: translateY(-200%);
+    transition:transform 2s , color 0.6s, text-shadow 0.6s;
+}
+#Products .container .content .box:hover .specialCard .back .head h3 
+{
+ transform: translateY(0%);
+ transition-delay: 4s;
+}
+#Products .container .content .box .specialCard .back .body .description p 
+{
+   width: 90%;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  margin: auto;
+  letter-spacing: 0.5px;
+  margin-bottom: 35px;
+  transform: translateX(-300%);
+  transition-duration: 2s;
+}
+#Products .container .content .box:hover .specialCard .back .body .description p 
+{
+ transform: translateX(0%);
+ transition-delay: 5s;
+}
+#Products .container .content .box .specialCard .back .body .price 
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#Products .container .content .box .specialCard .back .body .price p:nth-of-type(1) 
+{
+  transform: scale(0);
+  transition-duration: 2s;
+}
+#Products .container .content .box:hover .specialCard .back .body .price p:nth-of-type(1) 
+{
+  transform: scale(1);
+  transition-delay: 6s;
+}
+#Products .container .content .box .specialCard .back .body .price p:nth-of-type(2)
+{
+  margin-left: 8px;
+}
+#Products .container .content .box .specialCard .back .body .price p:nth-of-type(2) span:nth-of-type(1) 
+{
+  transition-duration: 2s;
+  opacity: 0;
+  transform: translateY(20%);
+}
+#Products .container .content .box:hover .specialCard .back .body .price p:nth-of-type(2) span:nth-of-type(1) 
+{
+  transform: translateY(0%);
+  transition-delay: 7s;
+  opacity: 1;
+}
+#Products .container .content .box .specialCard .back .body .price p:nth-of-type(2) span:nth-of-type(2) 
+{
+  transition-duration: 2s;
+  transform: translateX(20%);
+  opacity: 0;
+}
+#Products .container .content .box:hover .specialCard .back .body .price p:nth-of-type(2) span:nth-of-type(2) 
+{
+  transform: translateX(0%);
+  transition-delay: 8s;
+  opacity: 1;
 }

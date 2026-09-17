@@ -35,3 +35,66 @@
   }
 
 }
+@keyframes stroke {
+    0% {
+        fill: var(--main-color);
+        stroke: var(--second-color);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+    70% {
+        fill: var(--main-color);
+        stroke: var(--second-color);
+    }
+    80% {
+        fill: var(--main-color);
+        stroke: var(--second-color);
+        stroke-width: 3;
+    }
+    100% {
+        fill: var(--third-color);
+        stroke: rgba(54,95,160,0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+}
+@keyframes clockSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+     opacity: 0;
+     transform: translateX(-100px); 
+    }
+  to { 
+    opacity: 1;
+    transform: translateX(0);
+   }
+}
+
+@keyframes slideFromBottom {
+  from {
+   opacity: 0; transform: translateY(100px);
+   }
+  to {
+     opacity: 1; transform: translateY(0);
+     }
+}
+
+@keyframes slideFromRight {
+  from {
+     opacity: 0; transform: translateX(100px);
+     }
+  to {
+     opacity: 1; transform: translateX(0);
+     }
+}
+
