@@ -181,6 +181,8 @@ nav .container .body ul li.active a::after {
 #Home .container .title .buttons button:nth-of-type(1) {
   background: var(--btn-gradient);
   border: none;
+  cursor: pointer;
+
 }
 
 #Home .container .title .buttons button:nth-of-type(1):hover {
