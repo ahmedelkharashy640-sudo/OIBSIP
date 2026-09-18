@@ -1,11 +1,14 @@
-const themeToggleBtn = document.getElementById('themeToggleBtn');
+const themeToggleBtn = document.getElementById('themeToggleBtn'),
+        navLinks = document.querySelectorAll('nav .container .body ul li a'),
+        sections = document.querySelectorAll('.page-section'),
+        popupBoxes=document.querySelectorAll('.popup .box');
+
 
 themeToggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('Glow-theme');
 }); 
 
-const navLinks = document.querySelectorAll('nav .container .body ul li a');
-const sections = document.querySelectorAll('.page-section');
+
 
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
@@ -26,3 +29,25 @@ navLinks.forEach(link => {
     }
   });
 });
+
+popupBoxes.forEach(function(box){
+    box.addEventListener('click',function(e){
+        e.stopPropagation();
+    })
+});
+const loginForm = document.getElementById('loginForm');
+
+if (loginForm) {
+  loginForm.addEventListener('submit', function(e) {
+    e.preventDefault(); 
+
+    const formData = new FormData(this);
+    const userName = formData.get('userName');
+
+    console.log(`Welcome back, ${userName}!`);
+
+    this.reset();
+
+    closePopup();
+  });
+}

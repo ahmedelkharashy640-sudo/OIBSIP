@@ -13,30 +13,33 @@
     
     width: 135%;
     }
-
+    #Home .container .title 
+    {
+            padding-top: 10px;
+    }
     #Home .container .title h1 {
-    font-size: 25px;
+        font-size: 17px;
     }
     #Home .container .title p {
     width: 95%;
-    font-size: 13px;
+    font-size: 12px;
     }
-    #Home .container .title .buttons {
-    
-    width: 75%;
+        #Home .container .title .buttons {
+        width: 100%;
     }
-    #Home .container .title .buttons button a {
+    #Home .container .title .buttons button[type="button"],
+    #Home .container .title .buttons button a
+     {
     width: 120px;
     font-size: 14px;
     }
     #Home .container .title a.shape1, #Home .container .title a.shape2 {
-    width: 28px;
-    height: 55px;
-    top: 42%;
+        width: 27px;
+        height: 57px;
+        top: 41%;
     }
     #Home .container .body {
-   
-    height: 85%;
+        height: 91%;
     }
 
     #Home .container .body .box .item .icons .part
@@ -109,11 +112,11 @@
     }
     #Products .container .content .box .specialCard .back {
     top: 0%;
-    left: 14%;
+    left: 5%;
     width: 85%;
     }
     #Products .container .content .box .specialCard .back .head h3 {
-    font-size: 20px;
+    font-size: 18px;
     }
     #Products .container .content .box .specialCard .back .body .description p {
     width: 100%;
@@ -127,7 +130,9 @@
       nav .container .body ul {
         column-gap: 25px;
     }
-    #Home .container .title .buttons button a {
+    #Home .container .title .buttons button[type="button"],
+    #Home .container .title .buttons button a
+     {
         width: 160px;
     }
     #Home .container .title a.shape1, #Home .container .title a.shape2 {
@@ -135,8 +140,8 @@
         height: 60px;
         top: 40%;
     }
-        #Home .container .body {
-        height: 90%;
+    #Home .container .body {
+        height: 95%;
     }
     #Featured .container .content .box 
   {
@@ -156,6 +161,10 @@
 
 /*650*/
 @media (min-width: 577px) and (max-width: 1300px) {
+     #Home .container .title  
+     {
+        padding-top: 0;
+     }
     #Home .container .title h1 {
         font-size: 30px;
     }
@@ -202,6 +211,9 @@
 
 /*850*/
 @media (min-width: 769px) and (max-width: 1300px) {
+        #Home .container .title p {
+        width: 80%;
+        }
   #Home .container .body {
         height: 96%;
     }
@@ -235,6 +247,9 @@
     justify-content: space-between;
     width: 95%;
   }
+      #Home .container .title p {
+        width: 70%;
+      }
       #Home .container .body {
         height: 100%;
     }
