@@ -30,7 +30,7 @@
     #Home .container .title .buttons button[type="button"],
     #Home .container .title .buttons button a
      {
-    width: 120px;
+    width: 135px;
     font-size: 14px;
     }
     #Home .container .title a.shape1, #Home .container .title a.shape2 {
@@ -56,7 +56,7 @@
   }
   .theme-toggle-wrapper {
    
-    right: 5px;
+    right: 8px;
     }
     .theme-toggle-bar {
     width: 55px;
@@ -112,15 +112,15 @@
     }
     #Products .container .content .box .specialCard .back {
     top: 0%;
-    left: 5%;
-    width: 85%;
+    left: 0%;
+    width: 100%;
     }
     #Products .container .content .box .specialCard .back .head h3 {
     font-size: 18px;
     }
     #Products .container .content .box .specialCard .back .body .description p {
-    width: 100%;
-    font-size: 12px;
+        width: 90%;
+        font-size: 11px;
     }
 
 }
